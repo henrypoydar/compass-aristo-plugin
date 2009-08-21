@@ -1,4 +1,6 @@
 # Require any additional compass plugins here.
+require 'aristo'
+
 project_type = :stand_alone
 css_dir = "stylesheets"
 sass_dir = "src"

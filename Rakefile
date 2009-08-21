@@ -40,7 +40,8 @@ task :examples do
       output.close
     end
     Dir.chdir example do
-      Compass::Exec::Compass.new(["--force"]).run!
+      Compass::Exec::Compass.new(["-f aristo -p project ."]).run!
     end
   end
+  puts ""
 end

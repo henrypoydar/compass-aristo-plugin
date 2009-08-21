@@ -6,10 +6,14 @@ A [Compass](http://compass-style.org/) plugin that provides a CSS3 port of the [
 
     sudo gem install chriseppstein-compass
     sudo gem install hpoydar-compass-aristo-plugin
+    
+    
+    TODO
+    
 
 ## Usage
 
-Create a compass project (if you don't have one already) and require the Aristo library plugin:
+To add the 
 
     compass -r aristo -f <framework name> <project name>
     
