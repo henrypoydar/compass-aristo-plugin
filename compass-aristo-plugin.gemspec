@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{compass-aristo-plugin}
-  s.version = "0.0.5"
+  s.version = "0.0.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["hpoydar"]
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
      "sass/aristo/_text.sass",
      "sass/aristo/_windows.sass",
      "templates/project/aristo.sass",
-     "templates/project/images/blank.gif",
+     "templates/project/aristo_blank.gif",
      "templates/project/manifest.rb"
   ]
   s.homepage = %q{http://github.com/hpoydar/compass-aristo-plugin}

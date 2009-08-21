@@ -5,5 +5,46 @@
 +blueprint-grid
 
 body
- +regular-aristo-font
+  +regular-aristo-font
+  :color #333
+ 
+#header
+  :margin-top 40px
+  
+  h1
+    :text-transform uppercase
+    :font-size 36px
+    :font-weight bold
+    :height 36px
+    :line-height 36px
+    :color #000
+  
+.section
+  :margin-top 20px
+  
+  h2
+    :color #999
+    :border-bottom 1px solid #ccc
+    :font-size 10px
+    :line-height 12px
+    :margin-bottom 15px
+    :text-transform uppercase
+    :letter-spacing 1px
+    
+  &.text
+    .regular
+      +regular-aristo-font
+    .bold
+      +bold-aristo-font
+  
+#footer
+  :border-top 1px solid #ccc
+  :text-align right
+  :margin-top 20px
+  :padding-top 10px
+  :margin-bottom 40px
+  :font-size 11px
+  :color #999
+  a
+    :color #999
 

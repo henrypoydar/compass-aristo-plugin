@@ -14,18 +14,71 @@
         Aristo
       %h2
         Something believed to be the best of it's kind:
-        %em
+        %i
           the trout is the aristocrat of freshwater fish
           
-    .section.container
-      %h2
-        Text
-        
-    .section.container
+    .section.container.buttons
       %h2
         Buttons
         
+      .column.span-8        
+        %p
+          %button.aristo_default
+            More
+        
+          %button.aristo_default{:disabled => 'disabled'}
+            More
+          
+      .column.span-8.last
+        %p
+          %button.aristo_blue
+            More
+
+          %button.aristo_default{:disabled => 'disabled'}
+            More
+              
+    .section.container.controls
+      %h2
+        Controls
+        
+      .column.span-8
+        %p
+          %input{:type => 'checkbox', :id => 'checkbox_a'}
+          %label{:for => 'checkbox_a'}
+            Checkbox
+      
+      .column.span-8      
+        %p
+          %input{:type => 'radio', :name => 'radio', :value => 'a', :id => 'radio_a', :checked => 'checked'}
+          %label{:for => 'radio_a'}
+            Radio A
+          %br
+          %input{:type => 'radio', :name => 'radio', :value => 'b', :id => 'radio_b'}
+          %label{:for => 'radio_b'}
+            Radio B
+          %br
+          %input{:type => 'radio', :name => 'radio', :value => 'c', :id => 'radio_c'}
+          %label{:for => 'radio_c'}
+            Radio C
+            
+      .column.span-8.last
+        %p
+          %input{:type => 'range'}
+      
+          
+    .section.container.text
+      %h2
+        Text
+
+      %p.regular
+        ARIAL Regular 12/22
+        
+      %p.bold
+        ARIAL Bold 14/24
+        
+
+        
     #footer.container
-      = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-Share Alike 3.0 United States License</a>.'
+      = 'This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-Share Alike 3.0 United States License</a><br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" /></a>'
       
       
