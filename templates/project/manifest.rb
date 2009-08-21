@@ -1,6 +1,5 @@
 stylesheet 'aristo.sass', :media => "screen, projection"
 
-image 'aristo_blank.gif'
 image 'aristo-button-bezel-blue-o.png'
 image 'aristo-button-bezel-blue-x.png'
 image 'aristo-button-bezel-o.png'
