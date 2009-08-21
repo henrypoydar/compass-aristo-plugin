@@ -17,7 +17,7 @@
         %i
           the trout is the aristocrat of freshwater fish
           
-    .section.container.buttons
+    .section.container
       %h2
         Buttons
         
@@ -37,7 +37,7 @@
           %button.aristo_default{:disabled => 'disabled'}
             More
               
-    .section.container.controls
+    .section.container
       %h2
         Controls
         
@@ -64,9 +64,70 @@
       .column.span-8.last
         %p
           %input{:type => 'range'}
+          
+      .column.span-8
+        %p
+          %select
+            %option
+              Target A
+            %option
+              Target B
+            %option 
+              Target C
+      
+    .section.container
+      %h2
+        Menus
+
+      .column.span-8
+
+        %ul.aristo_menu
+          %li
+            %a
+              New
+          %li
+            %a
+              Open
+          %li
+            %a
+              Save
+          %li
+            %a
+              Project
+          %li
+            %a
+              Build
+            
+    
+      .column.span-8
+
+        %ul.aristo_menu_inverse
+          %li
+            %a
+              New
+          %li
+            %a
+              Open
+          %li
+            %a
+              Save
+          %li
+            %a
+              Project
+          %li
+            %a
+              Build
+      
+      
+    .section.container
+      %h2
+        Scrollbars
+        
+      %div.span-8.push-8{:style => "overflow: scroll; height: 300px"}
+
       
           
-    .section.container.text
+    .section.container
       %h2
         Text
 
@@ -76,6 +137,14 @@
       %p.bold
         ARIAL Bold 14/24
         
+        
+    .section.container
+      %h2
+        Windows
+
+      %p
+        %i
+          TODO
 
         
     #footer.container

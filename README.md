@@ -4,44 +4,30 @@ A [Compass](http://compass-style.org/) plugin that provides a CSS3 port of the [
 
 ## Install
 
-    sudo gem install chriseppstein-compass
     sudo gem install hpoydar-compass-aristo-plugin
     
-    
-    TODO
-    
+To add the plugin to an existing Compass project:
+
+    cd <compass_project_name>
+    compass -f aristo -p project .
+
+And add the following line to the top of the `config.rb` file created by compass:
+
+    require 'aristo'
 
 ## Usage
 
-To add the 
+Within your application's Sass files, import the Aristo mixins:
 
-    compass -r aristo -f <framework name> <project name>
-    
-_TODO: syntax for doing this with existing projects?_
+    @import aristo
 
-Within your application's Sass files, import the Aristo mixins. You can either import all of them or one at a time:
-
-    @import aristo/all
-    
-Or
-
-    @import aristo/buttons
-    @import aristo/controls
-    @import aristo/menus
-    @import aristo/scrollbars
-    @import aristo/text
-    @import aristo/windows
-
-_TODO: document specifics for each_
+Then modify the generated `aristo.sass` file to suit your needs. (The file itself has some useful comments.)
 
 ## TODO
 
-* Sass
-* Templates?
-* Image locations?
-* Rake tasks for building examples
+* Add segmented controls
+* Add windows
 * Documentation
-* Gem-ify
 * Attempt to have it look as good on FF3.5 as it does in Webkit/Chrome
 * Take a look in IE and document what works
 
