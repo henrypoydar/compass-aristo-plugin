@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{compass-aristo-plugin}
-  s.version = "0.0.10"
+  s.version = "0.0.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["hpoydar"]
@@ -40,8 +40,32 @@ Gem::Specification.new do |s|
      "sass/aristo/_scrollbars.sass",
      "sass/aristo/_text.sass",
      "sass/aristo/_windows.sass",
+     "templates/project/aristo-button-bezel-blue-o.png",
+     "templates/project/aristo-button-bezel-blue-x.png",
+     "templates/project/aristo-button-bezel-o.png",
+     "templates/project/aristo-button-bezel-x.png",
+     "templates/project/aristo-checkbox-o.png",
+     "templates/project/aristo-checkbox-x.png",
+     "templates/project/aristo-radio-o.png",
+     "templates/project/aristo-radio-x.png",
+     "templates/project/aristo-scroller-down-arrow-o.png",
+     "templates/project/aristo-scroller-down-arrow-track.png",
+     "templates/project/aristo-scroller-down-arrow-x.png",
+     "templates/project/aristo-scroller-horizontal-knob.png",
+     "templates/project/aristo-scroller-horizontal-track.png",
+     "templates/project/aristo-scroller-left-arrow-track.png",
+     "templates/project/aristo-scroller-left-arrow.png",
+     "templates/project/aristo-scroller-right-arrow-track.png",
+     "templates/project/aristo-scroller-right-arrow.png",
+     "templates/project/aristo-scroller-up-arrow-track.png",
+     "templates/project/aristo-scroller-up-arrow.png",
+     "templates/project/aristo-scroller-vertical-knob.png",
+     "templates/project/aristo-scroller-vertical-track.png",
+     "templates/project/aristo-select.png",
+     "templates/project/aristo-slider-horizontal-track.png",
+     "templates/project/aristo-slider-knob-o.png",
+     "templates/project/aristo-slider-knob-x.png",
      "templates/project/aristo.sass",
-     "templates/project/aristo_blank.gif",
      "templates/project/manifest.rb"
   ]
   s.homepage = %q{http://github.com/hpoydar/compass-aristo-plugin}
