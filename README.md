@@ -11,7 +11,7 @@ To add the plugin to an existing Compass project:
     cd <compass_project_name>
     compass -f aristo -p project .
 
-And add the following line to the top of the `config.rb` file created by compass:
+And add the following line to the top of the `config.rb` file created by Compass:
 
     require 'aristo'
 
