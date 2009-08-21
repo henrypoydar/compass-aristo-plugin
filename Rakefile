@@ -40,7 +40,7 @@ task :examples do
       output.close
     end
     Dir.chdir example do
-      Compass::Exec::Compass.new(["-f aristo -p project ."]).run!
+      system 'compass -f aristo -p project . --force'
     end
   end
   puts ""
