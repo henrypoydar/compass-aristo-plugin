@@ -44,21 +44,26 @@
       .column.span-8
         %p
           %input{:type => 'checkbox', :id => 'checkbox_a'}
-          %label{:for => 'checkbox_a'}
-            Checkbox
+          %label.checkbox{:for => 'checkbox_a'}
+            Checkbox A
+          %br
+          %input{:type => 'checkbox', :id => 'checkbox_b'}
+          %label.checkbox{:for => 'checkbox_b'}
+            Checkbox B
+            
       
       .column.span-8      
         %p
           %input{:type => 'radio', :name => 'radio', :value => 'a', :id => 'radio_a', :checked => 'checked'}
-          %label{:for => 'radio_a'}
+          %label.radio{:for => 'radio_a'}
             Radio A
           %br
           %input{:type => 'radio', :name => 'radio', :value => 'b', :id => 'radio_b'}
-          %label{:for => 'radio_b'}
+          %label.radio{:for => 'radio_b'}
             Radio B
           %br
           %input{:type => 'radio', :name => 'radio', :value => 'c', :id => 'radio_c'}
-          %label{:for => 'radio_c'}
+          %label.radio{:for => 'radio_c'}
             Radio C
             
       .column.span-8.last

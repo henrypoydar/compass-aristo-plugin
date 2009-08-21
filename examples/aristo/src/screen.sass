@@ -48,30 +48,3 @@ body
   a
     :color #999
 
-input
-  &[type="checkbox"]
-    –moz-appearance: none
-    -khtml-appearance: none
-    background-image= image_url("aristo-checkbox-o.png")
-    :background-repeat no-repeat
-    :width 15px
-    :height 16px
-    :vertical-align top
-
-    &:checked
-      background-image= image_url("aristo-checkbox-x.png")
-
-  &[type="radio"]
-    –moz-appearance: none
-    -khtml-appearance: none
-    background-image= image_url("aristo-radio-o.png")
-    :background-repeat no-repeat
-    :width 17px
-    :height 17px
-    :vertical-align top
-
-    &:checked
-      background-image= image_url("aristo-radio-x.png")
-      
-label
-  +bold-aristo-font

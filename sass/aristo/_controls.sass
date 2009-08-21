@@ -1,7 +1,31 @@
-// Checkboxes
+// Checkboxes and radio buttons
 
-// Radio buttons
+label.radio, label.checkbox
+  +bold-aristo-font
 
+input
+  &[type="checkbox"]
+    -khtml-appearance: none
+    background-image= image_url("aristo-checkbox-o.png")
+    :background-repeat no-repeat
+    :width 15px
+    :height 16px
+    :vertical-align top
+
+    &:checked
+      background-image= image_url("aristo-checkbox-x.png")
+
+  &[type="radio"]
+    -khtml-appearance: none
+    background-image= image_url("aristo-radio-o.png")
+    :background-repeat no-repeat
+    :width 17px
+    :height 17px
+    :vertical-align top
+
+    &:checked
+      background-image= image_url("aristo-radio-x.png")
+      
 // Sliders
 
 // Combo boxes 
