@@ -39,3 +39,5 @@ effort by 280 North, Inc. and Sofa and released under the Creative Commons Attri
 You can view this license here: [http://creativecommons.org/licenses/by-sa/3.0/us/](http://creativecommons.org/licenses/by-sa/3.0/us/)
 
 You can find out more about Aristo by visiting [http://cappuccino.org/aristo](http://cappuccino.org/aristo)
+
+Thanks to Alex MacCaw, who took the first crack at CSS-ifing Aristo: [http://github.com/maccman/aristo](http://github.com/maccman/aristo)

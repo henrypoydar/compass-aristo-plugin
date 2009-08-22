@@ -48,3 +48,18 @@ body
   a
     :color #999
 
+
+button.aristo_default
+  +bold-aristo-font
+  -khtml-appearance: none
+  -moz-appearance: none
+  :padding 0px 13px
+  :background none
+  :margin 5px
+  :-webkit-border-image= image_url("aristo-button-bezel-o.png") "2 2 2 2" "stretch" "stretch"
+  :-moz-border-image= image_url("aristo-button-bezel-o.png") "2 2 2 2" "stretch" "stretch"
+  :color #4F4F4F
+  :-webkit-transition -webkit-box-shadow 0.2s linear
+  :text-shadow 0px 1px 1px #fff
+  :height 24px
+  :line-height 20px
