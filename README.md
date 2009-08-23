@@ -27,6 +27,7 @@ Then modify the generated `aristo.sass` file to suit your needs. See [http://hpo
 
 ## TODO
 
+* Skin the combobox
 * Add segmented controls
 * Add windows
 * Documentation
