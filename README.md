@@ -23,7 +23,7 @@ Within your application's Sass files, import the Aristo mixins:
 
     @import aristo
 
-Then modify the generated `aristo.sass` file to suit your needs. (The file itself has some useful comments.)
+Then modify the generated `aristo.sass` file to suit your needs. See [http://hpoydar.com/compass-aristo-plugin](http://hpoydar.com/compass-aristo-plugin) for examples.
 
 ## TODO
 

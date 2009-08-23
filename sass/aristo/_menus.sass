@@ -1,3 +1,43 @@
-// Default menu
+=aristo-menu
+  :list-style none
+  :height 28px
+  :margin 0
+  :padding 0
+  :display inline-block
+  :overflow hidden
+  :background-image= image_url("aristo-menu-bg.png")
+  :background-repeat repeat-x
+  :background-position center center
+  li
+    :float left
+    :margin 0
+    :padding 0 9px
+    &:first-child
+      :padding-left 18px
+    &:last-child
+      :padding-right 18px
+    :height 28px
+    a
+      :font-size 11px
+      :line-height 28px
+      :font-weight bold
+      :color #1c4257
+      :text-shadow 0px 1px 1px #fff
+      &:hover
+        :color #333333
 
-// Invert menu
+=aristo-menu-inverse
+  +aristo-menu
+  :background-image= image_url("aristo-menu-inverse-bg.png")
+  li
+    a
+      :color #a5a5a5
+      :text-shadow 0px 1px 1px #000
+      &:hover
+        :color #fff
+        
+ul.aristo-menu
+  +aristo-menu
+
+ul.aristo-menu-inverse
+  +aristo-menu-inverse
