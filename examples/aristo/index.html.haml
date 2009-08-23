@@ -189,7 +189,7 @@
       %h2
         Scrollbars
         
-      %div.span-8.push-8{:style => "overflow: scroll; height: 300px;"}
+      %div.span-8{:style => "overflow: scroll; height: 300px;"}
         %p.span-16
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut tincidunt augue. Nunc placerat, libero eu lobortis mollis, mi lectus tristique metus, vel tincidunt nibh est sed odio. Donec euismod ultricies est, nec porta ipsum dictum sit amet. Suspendisse lacus purus, ullamcorper eget rutrum ut, laoreet vitae velit. Nam in leo eu nisi congue sagittis sed sed nisi. Sed ultricies luctus justo. Pellentesque orci arcu, vulputate vel dapibus non, posuere a orci. Suspendisse quis massa magna. Suspendisse potenti. Fusce placerat tempor purus id euismod. Praesent et turpis nisl, in pellentesque nisl. Nam vulputate justo tristique turpis tincidunt id dictum orci aliquet.
         %p.span-16
@@ -197,7 +197,7 @@
         %p.span-16  
           Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas egestas tempus ornare. Ut adipiscing feugiat tincidunt. Sed adipiscing imperdiet nisl, vitae mollis ante venenatis ut. Donec mollis, nulla vel malesuada vehicula, risus sem faucibus arcu, sed varius velit justo et risus. Mauris iaculis commodo erat, eget suscipit mi tempus in. Nullam venenatis sapien nec est mollis lacinia. Aenean placerat suscipit lectus, a luctus libero eleifend vel. Cras turpis mi, porta eget pharetra id, pharetra eget felis. Ut ac eros justo. Duis quis velit consequat eros placerat malesuada. In luctus lacus ut felis euismod porttitor. Aliquam tristique augue quis nunc imperdiet cursus. Aliquam erat volutpat. Donec leo est, placerat vel tristique at, imperdiet ut massa. Maecenas vel tortor a mi sodales eleifend eleifend eget nibh. Cras sagittis vehicula velit, et ultricies ante vehicula sit amet. Fusce massa risus, tempor eget elementum pharetra, sodales eu felis. Nam ut tellus neque, vitae dapibus purus.
 
-      %p.compass
+      %p.compass.span-8
         %code
           +aristo-scrollbars
 
@@ -213,6 +213,12 @@
         %span.bold
           ARIAL Bold 14/24
         
+      %p.compass.span-8
+        %code
+          +regular-aristo-font
+        or
+        %code
+          +bold-aristo-font
         
     .section.container
       %h2
