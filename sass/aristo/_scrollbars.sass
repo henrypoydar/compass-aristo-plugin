@@ -1,3 +1,66 @@
-// Vertical
+=aristo-scrollbars
+  ::-webkit-scrollbar
+    :width 17px
+    :height 17px
 
-// Horizontal
+  ::-webkit-scrollbar-button
+    &:vertical
+      &:end
+        :background-image= image_url("aristo-scroller-down-arrow-o.png") 
+        :background-repeat no-repeat
+        :width 17px
+        :height 20px
+
+      &:start
+        :background-image= image_url("aristo-scroller-up-arrow.png")
+        :background-repeat no-repeat
+        :width 17px
+        :height 22px
+
+    &:horizontal
+      &:start
+        :background-image= image_url("aristo-scroller-left-arrow.png")
+        :background-repeat no-repeat
+        :width 22px
+        :height 17px
+
+      &:end
+        :background-image= image_url("aristo-scroller-right-arrow.png")
+        :background-repeat no-repeat
+        :width 22px
+        :height 17px
+
+  ::-webkit-scrollbar-thumb
+    &:vertical
+      :-webkit-border-image= image_url("aristo-scroller-vertical-knob.png") "8 0 8 0 / 8px 0 8px 0" "stretch" "repeat"
+
+    &:horizontal
+      :-webkit-border-image= image_url("aristo-scroller-horizontal-knob.png") "7 9 7 9 / 7px 9px 7px 9px" "stretch" "repeat"
+
+  ::-webkit-scrollbar-track-piece
+    &:vertical
+      &:start
+        :background-image= image_url("aristo-scroller-up-arrow-track.png") "," image_url("aristo-scroller-vertical-track.png")
+        background-repeat: no-repeat, repeat-y
+
+      &:end
+        :background-image= image_url("aristo-scroller-down-arrow-track.png") "," image_url("aristo-scroller-vertical-track.png")
+        background-repeat: no-repeat, repeat-y
+        background-position: bottom left, 0 0
+
+    &:horizontal
+      &:end
+        :background-image= image_url("aristo-scroller-right-arrow-track.png") "," image_url("aristo-scroller-horizontal-track.png")
+        background-repeat: no-repeat, repeat-x
+        background-position: bottom right, 0 0
+
+      &:start
+        :background-image= image_url("aristo-scroller-left-arrow-track.png") "," image_url("aristo-scroller-horizontal-track.png")
+        background-repeat: no-repeat, repeat-x
+
+  ::-webkit-scrollbar-button
+    &:start:decrement, &:end:increment
+      :display block
+
+    &:start:increment, &:end:decrement
+      :display none

@@ -1,9 +1,9 @@
 // Checkboxes and radio buttons
 
-label.aristo_radio, label.aristo_checkbox
+label.aristo-radio, label.aristo-checkbox
   +bold-aristo-font
 
-=aristo_checkbox
+=aristo-checkbox
   -khtml-appearance: none
   background-image= image_url("aristo-checkbox-o.png")
   :background-repeat no-repeat
@@ -15,9 +15,9 @@ label.aristo_radio, label.aristo_checkbox
     
 input.aristo
   &[type="checkbox"]
-    +aristo_checkbox
+    +aristo-checkbox
 
-=aristo_radio
+=aristo-radio
   -khtml-appearance: none
   background-image= image_url("aristo-radio-o.png")
   :background-repeat no-repeat
@@ -29,9 +29,27 @@ input.aristo
 
 input.aristo
   &[type="radio"]
-    +aristo_radio
+    +aristo-radio
 
       
 // Sliders
+
+=aristo-slider
+  input[type="range"] 
+    -khtml-appearance: none 
+    :-webkit-border-image= image_url("aristo-slider-horizontal-track.png") "2 4 2 4 / 2px 4px 2px 4px" "repeat" "repeat"
+    :height 2px
+    :padding 0
+
+  ::-webkit-slider-thumb
+    -khtml-appearance: none
+    :background-image= image_url("aristo-slider-knob-o.png")
+    :background-repeat no-repeat
+    :width 23px
+    :height 24px
+    &:active
+      :background-image= image_url("aristo-slider-knob-x.png")
+  
+
 
 // Combo boxes 

@@ -4,6 +4,8 @@ A [Compass](http://compass-style.org/) plugin that provides a CSS3 port of the [
 
 ## Install
 
+You'll need to be familiar with the [Compass](http://compass-style.org/) CSS authoring framework and have it installed.  Then install the plugin as a gem:
+
     sudo gem install hpoydar-compass-aristo-plugin
     
 To add the plugin to an existing Compass project:

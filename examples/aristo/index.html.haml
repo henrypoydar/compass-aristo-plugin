@@ -17,39 +17,46 @@
         %i
           the trout is the aristocrat of freshwater fish
           
+      %p.compass
+        Examples of the CSS3
+        %a{:href => 'http://github.com/hpoydar/compass-aristo-plugin'} Aristo plugin
+        for the
+        %a{:href => 'http://compass-style.org'} Compass
+        CSS authoring framework in action. Looks best in Webkit browsers (Safari, Chrome).
+          
     .section.container
       %h2
         Buttons
         
       .column.span-8        
         %p
-          %button.aristo_default
+          %button.aristo-default
             More
         
-          %button.aristo_default{:disabled => 'disabled'}
+          %button.aristo-default{:disabled => 'disabled'}
             More
             
         %p.compass
           %code
-            button.aristo_default
+            button.aristo-default
           or
           %code
-            +aristo_default_button
+            +aristo-default-button
           
       .column.span-8.last
         %p
-          %button.aristo_blue
+          %button.aristo-blue
             More
 
-          %button.aristo_blue{:disabled => 'disabled'}
+          %button.aristo-blue{:disabled => 'disabled'}
             More
             
         %p.compass
           %code
-            button.aristo_blue
+            button.aristo-blue
           or
           %code
-            +aristo_blue_button
+            +aristo-blue-button
     
     
               
@@ -60,52 +67,56 @@
       .column.span-8
         %p
           %input.aristo{:type => 'checkbox', :id => 'checkbox_a'}
-          %label.aristo_checkbox{:for => 'checkbox_a'}
+          %label.aristo-checkbox{:for => 'checkbox_a'}
             Checkbox A
           %br
           %input.aristo{:type => 'checkbox', :id => 'checkbox_b'}
-          %label.aristo_checkbox{:for => 'checkbox_b'}
+          %label.aristo-checkbox{:for => 'checkbox_b'}
             Checkbox B
             
       
         %p.compass
           %code
-            label.aristo_checkbox
+            label.aristo-checkbox
           and
           %code
             input[type=checkbox].aristo
           or
           %code
-            +aristo_checkbox
+            +aristo-checkbox
       
       .column.span-8      
         %p
           %input.aristo{:type => 'radio', :name => 'radio', :value => 'a', :id => 'radio_a', :checked => 'checked'}
-          %label.aristo_radio{:for => 'radio_a'}
+          %label.aristo-radio{:for => 'radio_a'}
             Radio A
           %br
           %input.aristo{:type => 'radio', :name => 'radio', :value => 'b', :id => 'radio_b'}
-          %label.aristo_radio{:for => 'radio_b'}
+          %label.aristo-radio{:for => 'radio_b'}
             Radio B
           %br
           %input.aristo{:type => 'radio', :name => 'radio', :value => 'c', :id => 'radio_c'}
-          %label.aristo_radio{:for => 'radio_c'}
+          %label.aristo-radio{:for => 'radio_c'}
             Radio C
             
         %p.compass
           %code
-            label.aristo_radio
+            label.aristo-radio
           and
           %code
             input[type=radio].aristo
           or
           %code
-            +aristo_radio
+            +aristo-radio
 
             
       .column.span-8.last
         %p
           %input{:type => 'range'}
+          
+        %p.compass
+          %code
+            +aristo-slider
           
       .column.span-8
         %p
