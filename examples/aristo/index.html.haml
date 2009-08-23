@@ -28,14 +28,30 @@
         
           %button.aristo_default{:disabled => 'disabled'}
             More
+            
+        %p.compass
+          %code
+            button.aristo_default
+          or
+          %code
+            +aristo_default_button
           
       .column.span-8.last
         %p
           %button.aristo_blue
             More
 
-          %button.aristo_default{:disabled => 'disabled'}
+          %button.aristo_blue{:disabled => 'disabled'}
             More
+            
+        %p.compass
+          %code
+            button.aristo_blue
+          or
+          %code
+            +aristo_blue_button
+    
+    
               
     .section.container
       %h2
@@ -43,28 +59,49 @@
         
       .column.span-8
         %p
-          %input{:type => 'checkbox', :id => 'checkbox_a'}
-          %label.checkbox{:for => 'checkbox_a'}
+          %input.aristo{:type => 'checkbox', :id => 'checkbox_a'}
+          %label.aristo_checkbox{:for => 'checkbox_a'}
             Checkbox A
           %br
-          %input{:type => 'checkbox', :id => 'checkbox_b'}
-          %label.checkbox{:for => 'checkbox_b'}
+          %input.aristo{:type => 'checkbox', :id => 'checkbox_b'}
+          %label.aristo_checkbox{:for => 'checkbox_b'}
             Checkbox B
             
       
+        %p.compass
+          %code
+            input[type=checkbox].aristo
+          or
+          %code
+            +aristo_checkbox
+          and
+          %code
+            label.aristo_checkbox
+      
+      
       .column.span-8      
         %p
-          %input{:type => 'radio', :name => 'radio', :value => 'a', :id => 'radio_a', :checked => 'checked'}
-          %label.radio{:for => 'radio_a'}
+          %input.aristo{:type => 'radio', :name => 'radio', :value => 'a', :id => 'radio_a', :checked => 'checked'}
+          %label.aristo_radio{:for => 'radio_a'}
             Radio A
           %br
-          %input{:type => 'radio', :name => 'radio', :value => 'b', :id => 'radio_b'}
-          %label.radio{:for => 'radio_b'}
+          %input.aristo{:type => 'radio', :name => 'radio', :value => 'b', :id => 'radio_b'}
+          %label.aristo_radio{:for => 'radio_b'}
             Radio B
           %br
-          %input{:type => 'radio', :name => 'radio', :value => 'c', :id => 'radio_c'}
-          %label.radio{:for => 'radio_c'}
+          %input.aristo{:type => 'radio', :name => 'radio', :value => 'c', :id => 'radio_c'}
+          %label.aristo_radio{:for => 'radio_c'}
             Radio C
+            
+        %p.compass
+          %code
+            input[type=radio].aristo
+          or
+          %code
+            +aristo_radio
+          and
+          %code
+            label.aristo_radio
             
       .column.span-8.last
         %p

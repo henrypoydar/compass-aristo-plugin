@@ -1,4 +1,41 @@
-// Default buttons (gray)
+// Buttons
 
+=aristo_default_button
+  +bold-aristo-font
+  -khtml-appearance: none
+  -moz-appearance: none
+  :padding 0px 13px
+  :background none
+  :margin 5px
+  :-webkit-border-image= image_url("aristo-button-bezel-o.png") "2 2 2 2" "stretch" "stretch"
+  :-moz-border-image= image_url("aristo-button-bezel-o.png") "2 2 2 2" "stretch" "stretch"
+  :color #4F4F4F
+  :-webkit-transition -webkit-box-shadow 0.2s linear
+  :text-shadow 0px 1px 1px #fff
+  :height 24px
+  :line-height 20px
+  &:hover
+    -webkit-box-shadow: 0 0 5px #d4d4d4
+    -moz-box-shadow: 0 0 5px #d4d4d4
+  &:active:not(:disabled)
+    :-webkit-border-image= image_url("aristo-button-bezel-x.png") "2 2 2 2" "stretch" "stretch"
+    :-moz-border-image= image_url("aristo-button-bezel-x.png") "2 2 2 2" "stretch" "stretch"
+  &:disabled
+    :opacity 0.5
+  
+=aristo_blue_button
+  +aristo_default_button
+  :-webkit-border-image= image_url("aristo-button-bezel-blue-o.png") "2 2 2 2" "stretch" "stretch"
+  :-moz-border-image= image_url("aristo-button-bezel-blue-o.png") "2 2 2 2" "stretch" "stretch"
+  &:hover
+    -webkit-box-shadow: 0 0 5px #A1CAE2
+    -moz-box-shadow: 0 0 5px #A1CAE2
+  &:active:not(:disabled)
+    :-webkit-border-image= image_url("aristo-button-bezel-blue-x.png") "2 2 2 2" "stretch" "stretch"
+    :-moz-border-image= image_url("aristo-button-bezel-blue-x.png") "2 2 2 2" "stretch" "stretch"
+  
+button.aristo_default
+  +aristo_default_button
 
-// Blue buttons
+button.aristo_blue
+  +aristo_blue_button

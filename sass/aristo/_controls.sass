@@ -1,30 +1,36 @@
 // Checkboxes and radio buttons
 
-label.radio, label.checkbox
+label.aristo_radio, label.aristo_checkbox
   +bold-aristo-font
 
-input
+=aristo_checkbox
+  -khtml-appearance: none
+  background-image= image_url("aristo-checkbox-o.png")
+  :background-repeat no-repeat
+  :width 15px
+  :height 16px
+  :vertical-align top
+  &:checked
+    background-image= image_url("aristo-checkbox-x.png")
+    
+input.aristo
   &[type="checkbox"]
-    -khtml-appearance: none
-    background-image= image_url("aristo-checkbox-o.png")
-    :background-repeat no-repeat
-    :width 15px
-    :height 16px
-    :vertical-align top
+    +aristo_checkbox
 
-    &:checked
-      background-image= image_url("aristo-checkbox-x.png")
+=aristo_radio
+  -khtml-appearance: none
+  background-image= image_url("aristo-radio-o.png")
+  :background-repeat no-repeat
+  :width 17px
+  :height 17px
+  :vertical-align top
+  &:checked
+    background-image= image_url("aristo-radio-x.png")
 
+input.aristo
   &[type="radio"]
-    -khtml-appearance: none
-    background-image= image_url("aristo-radio-o.png")
-    :background-repeat no-repeat
-    :width 17px
-    :height 17px
-    :vertical-align top
+    +aristo_radio
 
-    &:checked
-      background-image= image_url("aristo-radio-x.png")
       
 // Sliders
 
