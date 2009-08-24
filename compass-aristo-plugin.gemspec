@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{compass-aristo-plugin}
-  s.version = "0.4.1"
+  s.version = "0.4.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["hpoydar"]
@@ -63,6 +63,8 @@ Gem::Specification.new do |s|
      "templates/project/aristo-scroller-up-arrow.png",
      "templates/project/aristo-scroller-vertical-knob.png",
      "templates/project/aristo-scroller-vertical-track.png",
+     "templates/project/aristo-select-arrow-bg.png",
+     "templates/project/aristo-select-bg.png",
      "templates/project/aristo-select.png",
      "templates/project/aristo-slider-horizontal-track.png",
      "templates/project/aristo-slider-knob-o.png",
