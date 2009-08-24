@@ -120,13 +120,21 @@
           
       .column.span-8
         %p
-          %select
+          %select.aristo
             %option
               Target A
             %option
               Target B
             %option 
               Target C
+        
+        %p.compass
+          %code
+            select.aristo
+          or
+          %code
+            +aristo-select
+        
       
     .section.container
       %h2

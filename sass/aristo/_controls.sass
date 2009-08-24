@@ -51,5 +51,26 @@ input.aristo
       :background-image= image_url("aristo-slider-knob-x.png")
   
 
+// Combo/select boxes
 
-// Combo boxes 
+=aristo-select
+  -khtml-appearance: none
+  +bold-aristo-font
+  :background-image= image_url("aristo-select-arrow-bg.png") "," image_url("aristo-select-bg.png")
+  background-repeat: no-repeat, repeat-x
+  background-position: top right, 0 0
+  :border-top 0px
+  :border-left 1px solid #bdbdbd
+  :border-bottom 0px
+  :border-right 0px
+  :-webkit-border-radius 3px
+  :-moz-border-radius 3px
+  border-radius: 3px
+  :text-shadow 0px 1px 1px #fff
+  :color #4F4F4F
+  :padding 0px 40px 0px 13px
+  :height 24px
+  :line-height 20px
+
+select.aristo
+  +aristo-select 
